@@ -5,4 +5,5 @@ RUN tar -xzvf  apache-tomcat-8.5.91.tar.gz  -C  /opt
 RUN mv /opt/apache* /opt/apache-tomcat
 RUN chmod +x /opt/apache-tomcat/bin/catalina.sh
 EXPOSE 8080/tcp
-CMD ['/opt/apache-tomcat/bin/catalina.sh','run']
+WORKDIR /opt/apache-tomcat/bin/
+CMD ["catalina.sh", "run"]
