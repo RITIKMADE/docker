@@ -7,3 +7,4 @@ RUN chmod +x /opt/apache-tomcat/bin/catalina.sh
 EXPOSE 8080/tcp
 WORKDIR /opt/apache-tomcat/bin/
 CMD ["catalina.sh", "run"]
+ADD student.war /opt/apache-tomcat/webapps/
