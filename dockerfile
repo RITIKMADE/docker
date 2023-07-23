@@ -8,4 +8,4 @@ COPY ./student.war /opt/apache-tomcat/webapps/
 COPY ./mysql-connector.jar /opt/apache-tomcat/lib/
 EXPOSE 8080/tcp
 WORKDIR /opt/apache-tomcat/bin/
-CMD ["catalina.sh", "run"]
+CMD ["./catalina.sh", "run"]
